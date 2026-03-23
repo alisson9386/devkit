@@ -817,7 +817,7 @@ var ALL_TOOLS = [
   { id:'jsontype',  icon:'⟨T⟩', label:'JSON → Type',          sub:'TypeScript · Java · Zod', kbd:'Ctrl+G' },
   { id:'http',      icon:'⇡',   label:'HTTP Tester',          sub:'GET · POST · PUT · PATCH', kbd:'Ctrl+H' },
   { id:'faker',     icon:'🎲',  label:'Faker BR',             sub:'dados fake brasileiros', kbd:'Ctrl+F' },
-  { id:'curl',      icon:'$_',  label:'cURL Converter',       sub:'Fetch · Axios · Java', kbd:'Ctrl+C' },
+  { id:'curl',      icon:'$_',  label:'cURL Converter',       sub:'Fetch · Axios · Java', kbd:'Ctrl+U' },
   { id:'color',     icon:'🎨',  label:'Color Picker',         sub:'HEX · RGB · HSL · contraste' },
   { id:'sql',       icon:'🗄️',  label:'SQL Formatter',        sub:'formatar · destacar sintaxe' },
   { id:'markdown',  icon:'📝',  label:'Markdown Preview',     sub:'preview em tempo real' },
@@ -1455,7 +1455,7 @@ var SHORTCUTS_DATA = [
   {key:'Ctrl+G',   desc:'JSON→Type'},
   {key:'Ctrl+H',   desc:'HTTP Tester'},
   {key:'Ctrl+F',   desc:'Faker BR'},
-  {key:'Ctrl+C',   desc:'cURL Converter'},
+  {key:'Ctrl+U',   desc:'cURL Converter'},
   {key:'Ctrl+S',   desc:'Snippets'},
   {key:'Esc',      desc:'Fechar modal/paleta'},
 ];
@@ -1474,7 +1474,7 @@ document.addEventListener('keydown', function(e) {
     var map = {
       '1':'json','2':'dates','3':'uuid','4':'encode','5':'diff','6':'regex',
       '7':'color','8':'scratch','9':'status',
-      'j':'jwt','g':'jsontype','h':'http','f':'faker','c':'curl','s':'snippets'
+      'j':'jwt','g':'jsontype','h':'http','f':'faker','u':'curl','s':'snippets'
     };
     if (map[e.key]) {
       e.preventDefault();
